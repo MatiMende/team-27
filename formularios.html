@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title> Formulario</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital@1&display=swap" rel="stylesheet">
+<link href="estilos.css" rel="stylesheet" />
+<script src="app.js" type="text/javascript">
+
+</script>
+
+
+</head>
+
+<body onload="init()">
+
+<header>
+<nav></nav>
+</header>
+
+<aside>
+
+    <nav>
+    </nav>
+</aside>
+
+<section>
+<h1>
+    Unite a Team 27
+</h1>
+<form action="http://midominio.com/miservicioWeb.php" method="post">
+    
+    <fieldset>
+        <legend>Datos de usuario</legend>
+        <label for="nombre">Nombre</label>
+        <input name="nombre" id="nombre" type="text" placeholder="escribe tu nombre" 
+        required autofocus/>
+        <br />
+        <label for="apellido">Apellido</label>
+        <input name="apellido" id="apellido" type="text" placeholder="primer apellido"/>
+        <br />
+        <label for="edad">Edad</label>
+        <input name="edad" id="edad" type="number"/>
+        <br />
+
+        <label for="clave">Contraseña</label>
+        <input name="clave" id="clave" type="password" />
+        <br />
+
+        <label for="mail">Email</label>
+        <input name="mail" id="mail" type="email" />
+        <br />
+        
+            <input type="hidden" name="sitio" value="contaminacion"/>
+    </fieldset>
+   
+<fieldset>
+
+    <legend>Otros datos</legend>
+    <label for="comentarios">Comentarios</label>
+    <textarea name="comentarios" id="comentarios">El club de los 27 es una expresión utilizada para referirse a músicos, artistas, y actores que fallecieron a la edad de 27 años.</textarea>
+    <br />
+
+    <label for="envio_mail">Enviar mails</label>
+    <input name="envio_mail" id="envio_mail" type="checkbox" />
+
+    <label for="llamar_telefono">Llamar por telefono</label>
+    <input name="llamar_telefono" id="llamar_telefono" type="checkbox" />
+    <br />
+
+
+        <label for="paises">Pais</label>
+        <select name="paises" id="paises">
+            <optgroup label="Europa">
+                <option value="es">España</option>
+                <option value="fr">Francia</option>
+            </optgroup>
+<optgroup label="America">
+    <option value="ar">Argentina</option>
+    <option value="en">EEUU</option>
+
+</optgroup>
+
+        </select>
+        <br />
+
+        <label>Ciudad
+        </label>
+        <input name="ciudad" id="ciudad" list="nombre_ciudades"/>
+
+        <datalist id="nombre_ciudades">
+            <option value="Buenos Aires"></option>
+            <option value="Mendoza"></option>
+            <option value="Cordoba"></option>
+            <option value="Salta"></option>
+        </datalist>
+
+    
+
+
+    </fieldset>
+
+
+    <input type="button" value="Enviar" />
+    <input type="reset" value="Borrar" />
+   
+
+    </form>
+</section>
+<footer>
+
+</footer>
+</body>
